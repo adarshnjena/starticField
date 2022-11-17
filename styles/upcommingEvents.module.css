@@ -1,0 +1,100 @@
+.heading{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.eventTitle{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 170px 170px 80px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: rgba(255, 255, 255,1);
+    box-shadow: 12px 10px 20px rgba(98, 99, 172, 0.8);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:50px;
+}
+.cardImage {
+    grid-area: image;
+    background: url("/commingSoon.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 110%;
+    background-size: cover;
+}
+
+.cardText {
+    grid-area: text;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 30px auto auto;
+    text-align: justify;
+
+}
+.cardText .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+    margin-left: 2px;
+    color: rgba(98, 99, 172, 0.8);
+}
+.cardText p {
+    color: grey;
+    font-size:12px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+.cardText h2 {
+    margin-top:0;
+    font-size:22px;
+    line-height: 120%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px  rgba(98, 99, 172, 1);
+}
+
+/*card2*/
+.ctoHunt .cardImage {
+    background: url("/allIndiaHunt.jpg");
+    background-size: cover;
+}
+.big5 .cardImage {
+    background: url("/big5.png");
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .heading{
+        font-size: 20px;
+        margin-bottom: 3vh;
+    }
+    .card{
+        margin: 10px;
+        box-shadow: none;
+    }
+
+    .card:hover{
+        transform: none;
+        box-shadow: none;
+    }
+}
